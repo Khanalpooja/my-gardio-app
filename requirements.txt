@@ -1,0 +1,9 @@
+gradio>=4.44.1
+
+# not needed for the app, but might need for other future tasks
+# pandas 
+# requests 
+# vaderSentiment 
+# plotly 
+# nltk
+# scikit-learn
