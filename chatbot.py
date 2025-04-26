@@ -4,7 +4,7 @@ def simple_chatbot(message):
     message_lower = message.lower()
 
     if any(greet in message_lower for greet in ["hello", "hi", "hey"]):
-        reply = "Hello! 👋 How can I help you today?"
+        reply = "Hello! I hope you are having a great day! 👋 How can I help you today?"
     elif "how are you" in message_lower:
         reply = "I'm just a bot, but I'm doing great! How about you?"
     elif "your name" in message_lower:
