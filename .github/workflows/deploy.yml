@@ -1,0 +1,22 @@
+name: Deploy Gradio App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build Docker image
+      run: |
+        docker build -t my-gradio-app .
+
+    - name: Run Docker container
+      run: |
+        docker run -d -p 5000:7860 my-gradio-app
